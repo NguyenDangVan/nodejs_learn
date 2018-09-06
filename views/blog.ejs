@@ -1,0 +1,144 @@
+
+<% include template/header.ejs %>;
+
+<div id="articles" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                <% fakedata.product.forEach(function(blog){ %>
+                    <div class="article-img"><img src="<%= blog.featureImage %>" alt="" /></div>
+                    <div class="article-title"><a href="/<%=blog.duongDanSeo%>.<%= blog.id %>"><%= blog.client %> </a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post.<%= blog.id %>" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>    
+                </div>
+            </div>
+            
+            
+<!--<div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                    <div class="article-img"><img src="./images/article2.jpg" alt="" /></div>
+                    <div class="article-title"><a href="post">Ut laoreet dolore magna aliquam erat</a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                    <div class="article-img"><img src="./images/article3.jpg" alt="" /></div>
+                    <div class="article-title"><a href="post">Nibh tincidunt ut laoreet dolore magna aliquam</a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                    <div class="article-img"><img src="./images/article4.jpg" alt="" /></div>
+                    <div class="article-title"><a href="post">Consectetuer elit, sed diam nonummy nibh tincidunt</a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                    <div class="article-img"><img src="./images/article6.jpg" alt="" /></div>
+                    <div class="article-title"><a href="post">Lorem ipsum dolor sit amet, consect Ut laoreet dolore magna aliquam erat</a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="article-summary">
+                    <div class="article-img"><img src="./images/article1.jpg" alt="" /></div>
+                    <div class="article-title"><a href="post">Lorem ipsum dolor sit amet, consect Ut laoreet dolore magna aliquam erat</a></div>
+                    <div class="article-text">Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.
+                    </div>
+                    <div class="article-links row">
+                        <div class="col-xs-6">
+                            <div class="date-holder">
+                                28 Feb, 2017
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="readmore-holder">
+                                <a href="post" class="ybtn ybtn-small ybtn-accent-color-text">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+
+            <div class="col-md-12">
+                <div class="pagination">
+                    <span class="current page-number">1</span>
+                    <a class="page-number" href="#">2</a>
+                    <a class="next page-number" href="#">Next</a>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<% include template/footer.ejs %>;

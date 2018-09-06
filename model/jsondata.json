@@ -1,0 +1,39 @@
+{
+    "product" : [{
+        "id":"1",
+        "title":"Thiết kế blog",
+        "featureImage":"/images/kid/article1.jpg",
+        "productImage":["/images/kid/7.jpg"],
+        "discription":"Mô tả",
+        "client":"Nguyen Dang Van",
+        "work done":"Back-end Web,Developer",
+        "catgory":"Thiết kế web",
+        "link":"http://fedu.vn",
+        "duongDanSeo":"thiet-ke-logo"
+    },
+    {
+        "id":"2",
+        "title":"Web Developer",
+        "featureImage":"/images/kid/2.jpg",
+        "productImage":["/images/kid/feature3.png","/images/kid/kid/feature4.png"],
+        "discription":"Mô tả",
+        "client":"Cao Hằng Nga",
+        "work done":"Coder",
+        "catgory":"Dev",
+        "link":"http://zingmp3.vn",
+        "duongDanSeo":"web-developer"
+    },
+    {
+        "id":"3",
+        "title":"Code Backend",
+        "featureImage":"/images/kid/7.jpg",
+        "productImage":["/images/kid/pricing1.png","/images/kid/pricing2.png"],
+        "discription":"Mô tả",
+        "client":"Trần Văn Cao",
+        "work done":"Designer",
+        "catgory":"Thiết kế banner",
+        "link":"http://zingtv.vn",
+        "duongDanSeo":"thiet-ke-banner"
+    }
+]
+}
